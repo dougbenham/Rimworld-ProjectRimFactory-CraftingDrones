@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!--============================= Crafting drone station ==================================-->
+  <ThingDef ParentName="PRF_DroneStationBase">
+    <defName>CraftingDroneStation</defName>
+    <label>Crafting drone station</label>
+    <description>A station that holds up to 20 drones, capable of crafting. Consumes considerable power. Typically your colony only needs 1 of these.</description>
+    <thingClass>ProjectRimFactory.Drones.Building_DroneStationSpecialGraphics</thingClass>
+    <graphicData>
+      <texPath>Drones/DroneStationCrafting</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentSpacer>5</ComponentSpacer>
+      <ComponentIndustrial>8</ComponentIndustrial>
+      <PRF_ElectronicChip_II>10</PRF_ElectronicChip_II>
+    </costList>
+    <modExtensions>
+      <li Class="ProjectRimFactory.Drones.DefModExtension_DroneStation">
+        <displayDormantDrones>false</displayDormantDrones>
+        <workTypes>
+          <li>Crafting</li>
+        </workTypes>
+      </li>
+    </modExtensions>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <basePowerConsumption>1500</basePowerConsumption>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>PRFCraftingDrones</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+</Defs>

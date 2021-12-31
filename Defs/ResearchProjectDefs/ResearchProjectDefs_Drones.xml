@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>PRFCraftingDrones</defName>
+    <label>crafting drones</label>
+    <techLevel>Spacer</techLevel>
+    <baseCost>2000</baseCost>
+    <description>Allows your colony to build the crafting drone station. Crafting drones can smith, tailor and craft. Craft drone modules at the robotic machining table.</description>
+    <prerequisites>
+      <li>PRF_CoreTierIII</li>
+      <li>AdvancedFabrication</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+      <li>PRF_ResearchTerminal</li>
+    </requiredResearchFacilities>
+    <tab>Automation</tab>
+    <researchViewX>14</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+</Defs>

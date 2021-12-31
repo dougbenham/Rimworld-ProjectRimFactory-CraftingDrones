@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName="PRFCaretakerDrones" or defName="PRFConstructionDrones" or defName="PRFGrowingDrones"]/prerequisites</xpath>
+		<value>
+			<prerequisites>
+			  <li>PRF_CoreTierIII</li>
+			  <li>AdvancedFabrication</li>
+			</prerequisites>
+		</value>
+	</Operation>
+</Patch>
